@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+  float l,a,t;
+
+int main()
+{
+header();
+input();
+luas();
+}
+void header(void){
+	printf("=====================================\n");
+  	printf("Program Menghitung Luas Permukaan Segitiga\n");
+  	printf("=====================================\n");
+}
+void input(void){
+	printf("Masukkan panjang alas: ");
+  	scanf("%f", &a);
+  	printf("Masukkan tinggi segitiga: ");
+	scanf("%f", &t);
+}
+
+  void luas(){
+  	l = 0.5*a*t;
+  	 printf("Luas Permukaan Segitiga adalah %.2f\n", l);
+  }
